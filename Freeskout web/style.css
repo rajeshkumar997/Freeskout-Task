@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: linear-gradient(to right, #00031d, #000536);
+    /* background-attachment: fixed; */
+    padding: 0.5rem 1rem;
+}
+
+.nav {
+    margin: 10px 66px;
+    padding: 0px 15px;
+}
+
+.icon {
+    width: 2rem;
+}
+
+.navcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-pricing {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-list {
+    display: flex;
+    gap: 2rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.divrow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    line-height: 2;
+    margin-top: 5rem;
+    gap: 30px;
+}
+
+.hed1 {
+    margin: 0px 0px 24px;
+    color: #FFFFFF;
+
+}
+
+.hed1 h1 {
+    line-height: 1.2;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.heading-1 h3 {
+    font-size: 20px;
+    padding: 10px 0px 0px;
+    color: #eee;
+    margin: 0px 0px 48px;
+}
+
+.divinfbtn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.btn1 {
+    color: #222222;
+    background: #1ADB80;
+    padding: 15px 34px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    word-wrap: wrap;
+    font-size: 16px;
+}
+
+.btn2 {
+    color: #222222;
+    background: #1ADB80;
+    padding: 15px 36px;
+    margin: 0px 0px 0px 12px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.mob1 {
+    width: 100%;
+    box-shadow: -5px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.wave img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+    .list {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background-color: #333;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .list.show {
+        right: 0;
+    }
+
+    .main-list {
+        margin-right: 50px;
+        margin-top: 80px;
+        padding: 20px;
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+        /* position: fixed; */
+    }
+
+    .hamburger.active .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}

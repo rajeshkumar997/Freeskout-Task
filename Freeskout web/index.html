@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Freeskout</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="navcontainer">
+                <div class="logo">
+                    <img class="icon" alt="" src="https://www.freeskout.com/img/freeskout.png" />
+                </div>
+                <div class="divnavbarresponsive">
+                    <div class="list">
+                        <div class="main-list">
+                            <div class="item">
+                                <a href="#" class="link-pricing">Brands</a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="link-pricing">Influencers</a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="link-pricing">Pricing</a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="link-pricing">Blogs</a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="link-pricing">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divrow">
+            <div class="divcol-lg-6">
+                <div class="divheader-content">
+                    <div class="heading-1">
+                        <div class="hed1">
+                            <h1 class="discover-connect">Discover. Connect.</h1>
+                            <h1 class="discover-connect">Collaborate.</h1>
+                        </div>
+                        <h3 class="heading-3">
+                            An ecosystem for Social media Influencers and Brands.
+                        </h3>
+                        <div class="divinfbtn">
+                            <button class="btn1">I'm an influencer</button>
+                            <button class="btn2">I'm a brand</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mob">
+                <div class="image">
+                    <img class="mob1" alt="" src="https://www.freeskout.com/img/top-influencer-profiles/top-3.png" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="wave">
+        <img src="https://front-end-noobs.com/jecko/img/wave-top.png" alt="">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger').click(function () {
+                $(this).toggleClass('active');
+                $('.list').toggleClass('show');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
